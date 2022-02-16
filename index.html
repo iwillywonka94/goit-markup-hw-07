@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -24,13 +24,13 @@
             <nav class="navmenu">
                 <ul class="mkey list">
                     <li class="nkey">
-                        <a href="./index.html" class="link current">Студия</a>
+                        <a href="./index.html" class="link header-link current">Студия</a>
                     </li>
                     <li class="nkey">
-                        <a href="./portfolio.html" class="link">Портфолио</a>
+                        <a href="./portfolio.html" class="link header-link">Портфолио</a>
                     </li>
                     <li class="nkey">
-                        <a href="#" class="link">Контакти</a>
+                        <a href="#" class="link header-link">Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -52,42 +52,42 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                <button type="button" class="button hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="peculiarities section">
             <div class="container">
                 <ul class="list peculiarities-flex">
-                    <li class="detail antenna">
+                    <li class="detail">
                         <div class="item">
-                            <svg class="item-pic">
+                            <svg class="item-pic" width="70" height="70">
                                 <use href="./image/sprite.svg#icon-pic-antenna"></use>
                             </svg>
                         </div>
                         <h3 class="pcaption">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="detail clock">
+                    <li class="detail">
                         <div class="item">
-                            <svg class="item-pic">
+                            <svg class="item-pic" width="70" height="70">
                                 <use href="./image/sprite.svg#icon-pic-clock"></use>
                             </svg>
                         </div>
                         <h3 class="pcaption">Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="detail diagram">
+                    <li class="detail">
                         <div class="item">
-                            <svg class="item-pic">
+                            <svg class="item-pic" width="70" height="70">
                                 <use href="./image/sprite.svg#icon-pic-diagram"></use>
                             </svg>
                         </div>
                         <h3 class="pcaption">Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="detail astronaut">
+                    <li class="detail">
                         <div class="item">
-                            <svg class="item-pic">
+                            <svg class="item-pic" width="70" height="70">
                                 <use href="./image/sprite.svg#icon-pic-astronaut"></use>
                             </svg>
                         </div>
@@ -351,14 +351,14 @@
                 </div>
                 <address>
                     <ul class="list">
-                        <li class="adress office">
-                            <a href="#" class="link">г. Киев, пр-т Леси Украинки, 26</a>
+                        <li class="adress">
+                            <a href="#" class="link adress">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="adress">
-                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                            <a href="mailto:info@devstudio.com" class="link adress adress-cont">info@devstudio.com</a>
                         </li>
-                        <li class="adress adress-phone">
-                            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                        <li class="adress">
+                            <a href="tel:+380961111111" class="link adress adress-cont">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -401,7 +401,7 @@
                 <div class="footer-mail-button">
                     <label class="footer-msg" for="mail"></label>
                     <input type="email" class="footer-mail" name="mail" id="mail" placeholder="E-mail">
-                    <button type="submit" class="footer-btn">Подписаться
+                    <button type="submit" class="button footer-btn">Подписаться
                         <svg class="footer-btn-icon" width="24" height="24">
                             <use href="./image/sprite.svg#icon-send"></use>
                         </svg>
@@ -460,7 +460,7 @@
                     </span>Соглашаюсь с рассылкой и принимаю &nbsp; <a href="#"> Условия договора</a>
                 </label>
             </div>
-            <button type="submit" class="send-modal">Отправить</button>
+            <button type="submit" class="button modal-btn">Отправить</button>
            </form>           
         </div>
     </div>

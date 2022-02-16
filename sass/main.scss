@@ -1,3 +1,17 @@
-body {
-  background-color: azure;
-}
+@import "./utils/variable";
+@import "./utils/reset";
+@import "./utils/common";
+@import "./utils/hiden";
+@import "./utils/title";
+@import "./components/button";
+@import "./components/social-icon";
+@import "./components/modal";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/peculiarties";
+@import "./layouts/ourwork";
+@import "./layouts/ourteam";
+@import "./layouts/ourclient";
+@import "./layouts/footer";
+@import "./portfolio/portfolio-buttons";
+@import "./portfolio/portfolio-galerry";
