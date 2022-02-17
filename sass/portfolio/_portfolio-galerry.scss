@@ -1,41 +1,9 @@
-.allworks-decor {
-  position: relative;
-  overflow: hidden;
-}
-
-.allworks-decor-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: 250ms;
-  overflow: auto;
-}
-
-.card:hover .allworks-decor-text {
-  transform: translateY(0);
-}
-
-.card:focus .allworks-decor-text {
-  transform: translateY(0);
-}
-
 .allworks {
   display: flex;
   flex-wrap: wrap;
 }
 
-.allworks-item {
+.allworks__list {
   margin-right: 30px;
   margin-bottom: 30px;
   &:hover,
@@ -51,12 +19,41 @@
   }
 }
 
-.allworks-text {
+.allworks__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.allworks__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  font-style: normal;
+  @include fonts(18px, 400, 1.55, 0.03em);
+  color: var(--primary-white-color);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: 250ms;
+  overflow: auto;
+}
+
+.allworks__link:hover .allworks__text {
+  transform: translateY(0);
+}
+
+.allworks__links .allworks__text {
+  transform: translateY(0);
+}
+
+.card-text {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
-.allworks-text > h2 {
+.card-text__title {
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
@@ -64,7 +61,7 @@
   margin-bottom: 4px;
 }
 
-.allworks-text > p {
+.card-text__pretitle {
   color: var(--secondary-text-color);
   line-height: 1.87;
 }

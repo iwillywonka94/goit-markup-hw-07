@@ -1,16 +1,14 @@
-.section-ourwork {
+.work {
   padding-top: 0;
 }
 
-.ourwork-flex {
+.ourwork__list {
   display: flex;
 }
 
-.ourwork-flex-item {
-  display: flex;
+.ourwork__item {
+  @include dFlexCenter;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   margin-right: 30px;
   position: relative;
   &:last-child {
@@ -18,18 +16,15 @@
   }
 }
 
-.ourwork-text {
+.ourwork__text {
   padding: 27px 0;
   position: absolute;
   width: 100%;
   min-height: 70px;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  @include fonts(14px, 700, 1.14, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   cursor: default;

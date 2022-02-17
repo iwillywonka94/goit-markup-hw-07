@@ -1,35 +1,32 @@
-.peculiarities-flex {
+.peculiarities {
   display: flex;
 }
 
-.detail {
+.peculiarities__detail {
   margin-right: 30px;
   display: flex;
   flex-direction: column;
   &:last-child {
     margin-right: 0;
   }
-  p {
-    color: var(--secondary-text-color);
-    font-size: 14px;
-    line-height: 1.71;
-  }
 }
 
-.item {
+.peculiarities__card {
   background: #f5f4fa;
   border-radius: 4px;
   height: 120px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include dFlexCenter;
 }
 
-.pcaption {
+.peculiarities__title {
   color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.14;
+  @include fonts(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.peculiarities__text {
+  color: var(--secondary-text-color);
+  @include fonts(14px, 400, 1.71, 0.03em);
 }

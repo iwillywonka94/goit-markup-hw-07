@@ -2,7 +2,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header-flex {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,44 +10,39 @@
   padding-bottom: 24px;
 }
 
-.logo-flex {
-  display: inline-block;
+.logo {
   margin-right: 93px;
 }
 
-.logo > span {
+.logo__link {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.web {
-  color: var(--accent-color);
-}
-
-.studio {
-  color: var(--primary-text-color);
-}
-
-.fwhite {
-  color: var(--primary-white-color);
-}
-
-.nkey {
-  margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
+  @include dFlexCenter;
+  @include fonts(26px, 500, 1.2, 0.03em);
+  .web {
+    color: var(--accent-color);
+  }
+  .studio {
+    color: var(--primary-text-color);
+  }
+  .fwhite {
+    color: var(--primary-white-color);
   }
 }
 
-.header-link {
+.mkey {
+  display: flex;
+  &__item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.mkey__link {
   color: var(--primary-text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include fonts(14px, 500, 1.14, 0.02em);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -59,37 +54,29 @@
   margin-left: auto;
 }
 
-.contacts-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: var(--secondary-text-color);
-  color: var(--secondary-text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-  }
-}
-
-.contacts-icon {
-  margin-right: 10px;
-}
-
-.contacts-item {
+.contacts__item {
   margin-right: 30px;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.mkey {
-  display: flex;
+.contacts__link {
+  @include dFlexCenter;
+  @include fonts(14px, 500, 1.14, 0.02em);
+  fill: var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
 }
 
 .current {
